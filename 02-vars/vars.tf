@@ -2,7 +2,7 @@ variable "sample" {
   default = "Welcome to terraform"
 }
 
-variable "sample_output" {
+output "sample_output" {
   value = var.sample
 }
 
@@ -13,3 +13,5 @@ variable "sample_op" {
 output "sample_var_op" {
   value = "value of the variable is ${var.sample_op}"
 }
+
+
