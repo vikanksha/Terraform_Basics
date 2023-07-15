@@ -16,7 +16,7 @@ output "sample_var_op" {
 
 
 variable "example_map" {
-  default {
+  default = {
     Batch = "B54"
     Training = "DevopswithAWS"
     Mode = "Online"
