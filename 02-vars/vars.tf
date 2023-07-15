@@ -15,3 +15,14 @@ output "sample_var_op" {
 }
 
 
+variable "example_map" {
+  default {
+    Batch = "B54"
+    Training = "DevopswithAWS"
+    Mode = "Online"
+  }
+}
+
+output "example_map_op"{
+    value = "we are learning ${var.example_map["Training"]} and this is our ${var.example_map["Batch"]} and that it is ${var.example_map["Mode"]}"
+}
